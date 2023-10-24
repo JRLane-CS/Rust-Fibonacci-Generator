@@ -1,4 +1,4 @@
-//override rust defaults
+//override rust defaults for non-snake case and unused_assignments
 #![allow(unused_assignments)]
 #![allow(non_snake_case)]
 
@@ -129,7 +129,8 @@ fn main() {
             println!("{} will be used as your integer instead.", parse_input);
         }
 
-        //parse user input string to integer, assign to user_integer, else set error code 
+        //parse user input string to integer, assign to user_integer, 
+        // else set error code 
         match parse_input.parse::<u128>() {
             Ok(i) => user_integer = i,
             Err(..) => error_code = true,
@@ -181,12 +182,22 @@ fn main() {
         println!("\nThe Fibonacci Sequence has finished.");
 
         //create user prompt to repeat, get user input through stdin()
-        println!("\nDo you want to run another sequence (y/n)?");
+        println!("\nDo you want to run another sequence?");
+        println!("(enter y for yes or anythinge else to quit.)");
+        
+        //clear user input string in preparation for user input
         user_input.clear();
-        io::stdin().read_line(&mut user_input).expect("failed to read from stdin");
+        
+        //get user input through stdin()
+        io::stdin()
+            .read_line(&mut user_input)
+            .expect("failed to read from stdin");
         
         //if the user did not enter y, say goodbye, exit the main loop
-        if user_input.trim() != "y" {
+        // convert user input to lower case to cover shift lock
+        // and add yes for user confusion as acceptable inputs
+        if user_input.trim().to_lowercase() != "y" 
+            && user_input.trim().to_lowercase() != "yes" {
             println!("\nThanks for using the Rust Fibonacci Generator!");
             println!("Exiting...\n");
             control = false;
