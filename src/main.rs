@@ -50,7 +50,7 @@ fn main() {
         //get user input through stdin()
         io::stdin()
             .read_line(&mut user_input)
-            .expect("failed to read from stdin");
+            .expect("Failure to read from stdin");
 
         //if user selected 0, set default values to start at the first 1    
         if user_input.trim() == "0" {
@@ -110,7 +110,7 @@ fn main() {
         //get user input through stdin()
         io::stdin()
             .read_line(&mut user_input)
-            .expect("failed to read from stdin");
+            .expect("Failure to read from stdin");
 
         //trim user input to remove white spaces
         let mut parse_input = user_input.trim();
@@ -163,7 +163,7 @@ fn main() {
             sequence_number += 1;
 
             //print the sequence and value of the current fibonacci number
-            println!("Sequence #{}: {}", sequence_number,
+            println!("Fibonacci sequence #{}: {}", sequence_number,
                 first_number + second_number);
             
             //package all three numbers into an array
@@ -191,7 +191,7 @@ fn main() {
         //get user input through stdin()
         io::stdin()
             .read_line(&mut user_input)
-            .expect("failed to read from stdin");
+            .expect("Failure to read from stdin");
         
         //if the user did not enter y, say goodbye, exit the main loop
         // convert user input to lower case to cover shift lock
