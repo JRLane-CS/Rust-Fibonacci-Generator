@@ -42,7 +42,7 @@ fn main() {
         println!("To start the sequence at the second 1, enter 1.");
         println!("To begin the sequence at 2, enter 2.");
         
-        //create user prompt
+        //create user prompt without newline for user input
         print!("\nSelect starting Fibonacci number: ");
         io::stdout().flush().unwrap();
 
@@ -106,7 +106,7 @@ fn main() {
             second_number, fibonacci_number];
         let max_input: usize = 38;
 
-        //create user prompt
+        //create user prompt without newline for user input
         print!("\nEnter an integer: ");
         io::stdout().flush().unwrap();
 
