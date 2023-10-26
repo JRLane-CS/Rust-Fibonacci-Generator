@@ -4,6 +4,7 @@
 
 //import io module from std for input/output operations
 use std::io;
+use std::io::Write;
 
 //function to calculate the fibonacci number and return its value
 fn calculate_fibonacci_number(fibonacci_array: [u128; 3]) -> u128 {
@@ -42,7 +43,8 @@ fn main() {
         println!("To begin the sequence at 2, enter 2.");
         
         //create user prompt
-        println!("\nSelect starting Fibonacci number: ");
+        print!("\nSelect starting Fibonacci number: ");
+        io::stdout().flush().unwrap();
 
         //clear user input string in preparation for user input
         user_input.clear();
@@ -105,7 +107,8 @@ fn main() {
         let max_input: usize = 38;
 
         //create user prompt
-        println!("\nEnter an integer:");
+        print!("\nEnter an integer: ");
+        io::stdout().flush().unwrap();
 
         //get user input through stdin()
         io::stdin()
