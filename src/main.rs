@@ -107,7 +107,7 @@ fn main() {
         let max_input: usize = 38;
 
         //create user prompt without newline for user input
-        print!("\nEnter an integer: ");
+        print!("\nEnter an integer for the sequence limit: ");
         io::stdout().flush().unwrap();
 
         //get user input through stdin()
