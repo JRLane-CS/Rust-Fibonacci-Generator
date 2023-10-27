@@ -8,7 +8,7 @@ The Rust Fibonacci Generator was written so I could familiarize myself with the 
 
 ### Operation
 
-Upon starting the application from the command line, the program explains that the Fibonacci sequence always begins with the sequence of 1, 1, 2. It then prompts the user to select a starting point for the sequence. Once the user selects a starting number, program asks the user to select an integer. This is used as the limit for the Fibonacci sequence. There are many error handling conditionals contained within the program which automatically default to safe values in case of erroneous user input. Once the sequence has been displayed, the user is prompted as to whether another sequence should be run. If the user selects y, Y, yes, or YES the program will repeat from the point of requesting where the user would like the sequence to begin.
+Upon starting the application from the command line, the program explains that the Fibonacci sequence always begins with the sequence of 1, 1, 2. It then prompts the user to select a starting point for the sequence. Once the user selects a starting number, the program asks the user to select an integer to be used as the limit for the Fibonacci sequence. There are several error handling conditionals contained within the program which automatically default to safe values in case of erroneous user input. Once the sequence has been displayed, the user is prompted as to whether another sequence should be run. If the user selects y, Y, yes, or YES the program will repeat from the point of displaying the options and requesting where the user would like the sequence to begin.
 
 ## Demo Video
 
