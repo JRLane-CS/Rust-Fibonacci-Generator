@@ -12,7 +12,7 @@ Upon starting the application from the command line, the program explains that t
 
 ## Demo Video
 
-[Rust Fibonacci Generator Video Demo](https://youtu.be/6Z9h0skqYYY)
+[Rust Fibonacci Generator Video Demo](https://youtu.be/B5fdefOct6I)
 
 ## Development Environment
 
